@@ -17,7 +17,8 @@ int main() {
         cout << char(int(word) + key) << endl;
     }
     else {
-        cout << "fuck you" << endl;
+        // cout << char(97 + key) << endl;
+        cout << (122 - int(word)) + 97 << endl;
     }
     return 0;
 }
