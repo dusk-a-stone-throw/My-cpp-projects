@@ -14,12 +14,7 @@ void multiplication(int & a) {
 int main() {
     std::vector<int> commands = {1, 2};
     std::vector<int> test = {};
-    for(int k = 0; k < 4; k++) {
-        for(int i = 0; i < 2; i++) {
-            for(int j = 0; j < 2; j++) {
-                cout << commands[i] << commands[j];
-            }
-        }
-        cout << endl;
+    for(int i = 0; i < 5; i++) {
+
     }
 }

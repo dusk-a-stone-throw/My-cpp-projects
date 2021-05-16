@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <ctime>
-#include <windows.h>
 using std::cout;
 using std::endl;
 using std::cin;
@@ -66,7 +65,6 @@ void Generate(vector <int>& field, int bombs) {
 int main() {
     srand(time(NULL));
     setlocale(LC_ALL, "RU");
-    SetConsoleOutputCP(1251);
     cout << "”гадывайте пустые €чейки, чтобы выиграть, но помните, что можете взорватьс€ на мине." << endl;
     const int tiles = 36;
     while (true) {
