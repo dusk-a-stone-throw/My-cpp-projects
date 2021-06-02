@@ -31,7 +31,10 @@ int main(int argc, char *argv[]) {
                 break;
             }
             case '/': {
-                cout << a / b << endl;
+                if (b == 0)
+                    cout << "ERROR" << endl;
+                else
+                    cout << a / b << endl;
                 break;
             }
             case '^': {
@@ -46,7 +49,9 @@ int main(int argc, char *argv[]) {
                 cout << a * std::sqrt(b) << endl;
                 break;
             }
-        }
+            default:
+                cout <<"INCORRECT OPERATION" << endl;
+        } 
     }
     return 0;
 }
