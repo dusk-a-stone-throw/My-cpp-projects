@@ -139,6 +139,7 @@ void parsing(char phrase[]) {
                 std::cout  << ".";
                 break;
             }
+
             case 'Z': {
                 std::cout  << "Я";
                 break;
@@ -244,6 +245,7 @@ void parsing(char phrase[]) {
                 std::cout  << "З";
                 break;
             }
+
             default:
                 std::cout << phrase[i];
         }
