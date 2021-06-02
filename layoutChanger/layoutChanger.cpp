@@ -6,7 +6,14 @@ using std::endl;
 using std::string;
 int main(int argc, char *argv[]) {
     setlocale(LC_CTYPE, "");
-    parsing(argv[1]);
-    cout << endl;
+    if(argc < 2) {
+        cout << "Слишком мало аргументов." << endl;
+    }
+    else if(argc > 2) {
+        cout << "Слишком много аргументов." << endl;
+    }
+    else {
+        parsing(argv[1]);
+    }
     return 0;
 }
