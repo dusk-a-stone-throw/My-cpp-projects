@@ -13,9 +13,9 @@ int main(int argc, char *argv[]) {
     }
     else {
         std::string str = argv[1];
-        int a = std::stoi(str);
+        double a = std::stoi(str);
         str = argv[3];
-        int b = std::stoi(str);
+        double b = std::stoi(str);
         char action = (argv[2])[0];
         switch (action) {
             case '+': {
@@ -38,7 +38,7 @@ int main(int argc, char *argv[]) {
                 break;
             }
             case '^': {
-                cout << std::pow(a, b) << endl;
+                cout << std::pow(a, int(b)) << endl;
                 break;
             }
             case '%': {
