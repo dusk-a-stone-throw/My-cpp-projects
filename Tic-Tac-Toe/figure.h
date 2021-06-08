@@ -1,4 +1,6 @@
-#pragma once
+
+#ifndef FIGURE_H
+#define FIGURE_H
 class Figure {
 private:
     char type;
@@ -10,3 +12,4 @@ public:
         return type;
     }
 };
+#endif

@@ -8,3 +8,4 @@ void Figure::SetType(char type) {
 Figure::Figure() {
     type = ' ';
 }
+

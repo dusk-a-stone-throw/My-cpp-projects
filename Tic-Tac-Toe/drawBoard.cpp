@@ -1,3 +1,5 @@
+#include "figure.h"
+#include <iostream>
 void drawBoard(Figure board[3][3]) {
     for(int i = 0; i < 3; i++) {
         std::cout << "—————————————" << std::endl;
