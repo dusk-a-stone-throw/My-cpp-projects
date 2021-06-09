@@ -30,13 +30,6 @@ bool isFull(Figure board[3][3]) {
     }
     return true;
 }
-bool gameOver(Figure board[3][3]) {
-    if(isWin(board) || isFull(board))
-        return true;
-    else {
-        return false;
-    }
-}
 int main() {
     Figure board[3][3];
     char turn = 'X';
