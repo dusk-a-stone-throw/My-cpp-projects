@@ -7,4 +7,5 @@ public:
     void        Enlarge();
     std::string GetValue();
     void        Clear();
+    void        SetValue(std::string value);
 };
