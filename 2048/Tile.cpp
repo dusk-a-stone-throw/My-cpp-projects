@@ -4,7 +4,7 @@ Tile::Tile() {
     value = "    ";
 }
 void Tile::Clear() {
-
+    value = "    ";
 }
 void Tile::Enlarge() {
 

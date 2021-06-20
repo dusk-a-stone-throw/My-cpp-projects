@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Tile.h"
-#include "DrawGrid.h" // For test, i should remove it and use DrawGrid.h
+#include "DrawGrid.h"
 int main() {
     Tile grid[4][4];
     for(int i = 0; i < 4; i++) {
