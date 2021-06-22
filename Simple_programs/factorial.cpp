@@ -13,5 +13,4 @@ int Fact(int x) {
 }
 int main() {
     cout << Fact(25) << endl;
-    system("pause");
 }
