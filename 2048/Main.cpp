@@ -1,5 +1,4 @@
 #include <iostream>
-
 #include "DrawGrid.h"
 #include "Tile.h"
 int main() {
