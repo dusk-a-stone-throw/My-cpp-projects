@@ -1,11 +1,15 @@
 #include <string>
+#ifndef TILE_H
+#define TILE_H
 class Tile {
-private:
+   private:
     std::string value;
-public:
+
+   public:
     Tile();
-    void        Enlarge();
+    void Enlarge();
     std::string GetValue();
-    void        Clear();
-    void        SetValue(std::string value);
+    void Clear();
+    void SetValue(std::string value);
 };
+#endif
