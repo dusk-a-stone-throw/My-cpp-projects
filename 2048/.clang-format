@@ -1,0 +1,184 @@
+# NOT INCLUDED OPTIONS:
+# CommentPragmas (string)
+# DisableFormat (bool)
+# ForEachMacros (std::vector<std::string>)
+# IncludeCategories (std::vector<IncludeCategory>)
+# IncludeIsMainRegex (std::string)
+# Language (LanguageKind)
+# MacroBlockBegin (std::string)
+# MacroBlockEnd (std::string)
+# PenaltyBreakAssignment (unsigned)
+# PenaltyBreakComment (unsigned)
+# PenaltyBreakFirstLessLess (unsigned)
+# PenaltyBreakString (unsigned)
+# PenaltyExcessCharacter (unsigned)
+# RawStringFormats (std::vector<RawStringFormat>)
+# ====================================================
+
+
+# Letter A ===========================================
+
+# Always
+AlwaysBreakBeforeMultilineStrings: false
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+AlwaysBreakTemplateDeclarations: true
+
+# Alings
+AlignConsecutiveAssignments: true
+AlignEscapedNewlines: Left
+AlignOperands: false
+AlignTrailingComments: true
+AlignAfterOpenBracket: Align
+
+# Allows 
+AllowShortFunctionsOnASingleLine: false
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortBlocksOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+# ====================================================
+
+
+# Letter B ===========================================
+
+# Breaks
+BreakConstructorInitializers: AfterColon
+BreakStringLiterals: true
+BreakAfterJavaFieldAnnotations: true
+BreakBeforeBinaryOperators: None
+BreakBeforeInheritanceComma: false
+BreakBeforeTernaryOperators: false
+
+# BinPack
+BinPackArguments: true
+BinPackParameters: false
+
+#Brace Wrapping
+BreakBeforeBraces: Custom
+BraceWrapping:
+    IndentBraces: false
+    
+    # After
+    AfterClass: true
+    AfterControlStatement: false
+    AfterEnum: false
+    AfterFunction: false
+    AfterNamespace: false
+    AfterObjCDeclaration: false
+    AfterStruct: false
+    AfterUnion: false
+    AfterExternBlock: false
+    
+    # Before
+    BeforeCatch: true
+    BeforeElse: true
+    
+    # Split
+    SplitEmptyFunction: true
+    SplitEmptyRecord: true
+    SplitEmptyNamespace: true
+# ====================================================
+
+
+# Letter C ===========================================
+ColumnLimit: 80
+CompactNamespaces: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+ConstructorInitializerIndentWidth: 4
+ContinuationIndentWidth: 4
+Cpp11BracedListStyle: true
+# ====================================================
+
+
+# Letter D ===========================================
+DerivePointerAlignment: false
+# ====================================================
+
+
+# Letter E ===========================================
+ExperimentalAutoDetectBinPacking: false
+# ====================================================
+
+
+# Letter F ===========================================
+FixNamespaceComments: false
+# ====================================================
+
+
+# Letter I ===========================================
+IncludeBlocks: Regroup
+# Indents
+IndentCaseLabels: true
+IndentPPDirectives: None
+IndentWidth: 4
+IndentWrappedFunctionNames: false
+# ====================================================
+
+
+# Letter J ===========================================
+JavaScriptQuotes: Double
+JavaScriptWrapImports: true
+
+
+# Letter K ===========================================
+KeepEmptyLinesAtTheStartOfBlocks: false
+# ====================================================
+
+
+# Letter M ===========================================
+MaxEmptyLinesToKeep: 2
+# ====================================================
+
+
+# Letter N ===========================================
+NamespaceIndentation: All
+# ====================================================
+
+
+# Letter O ===========================================
+ObjCBlockIndentWidth: 4
+ObjCSpaceAfterProperty: false
+ObjCSpaceBeforeProtocolList: false
+# ====================================================
+
+
+# Letter P ===========================================
+# maybe there will be a reasons for the bugs
+PenaltyExcessCharacter: 1
+PenaltyBreakBeforeFirstCallParameter: 100
+PenaltyReturnTypeOnItsOwnLine: 0
+PointerAlignment: Right
+
+
+# Letter R ===========================================
+ReflowComments: true
+# ====================================================
+
+
+# Letter S ===========================================
+SortIncludes: false
+SortUsingDeclarations: false
+SpaceAfterCStyleCast: false
+SpaceAfterTemplateKeyword: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: Never
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 1
+SpacesInAngles: false
+SpacesInCStyleCastParentheses: false
+SpacesInContainerLiterals: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+Standard: auto
+# ====================================================
+
+
+# Letter T ===========================================
+TabWidth: 4
+# ====================================================
+
+
+# Letter U ===========================================
+UseTab: Never
+# ====================================================
