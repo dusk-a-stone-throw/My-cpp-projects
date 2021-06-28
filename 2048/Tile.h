@@ -2,10 +2,10 @@
 #ifndef TILE_H
 #define TILE_H
 class Tile {
-   private:
+private:
     std::string value;
 
-   public:
+public:
     Tile();
     void Enlarge();
     std::string GetValue();

@@ -17,7 +17,7 @@
 
 
 # Letter A ===========================================
-
+AccessModifierOffset: -4
 # Always
 AlwaysBreakBeforeMultilineStrings: false
 AlwaysBreakAfterDefinitionReturnType: None
@@ -60,7 +60,7 @@ BraceWrapping:
     IndentBraces: false
     
     # After
-    AfterClass: true
+    AfterClass: false
     AfterControlStatement: false
     AfterEnum: false
     AfterFunction: false
