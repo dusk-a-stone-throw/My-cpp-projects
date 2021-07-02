@@ -17,7 +17,7 @@ void Tile::Enlarge() {
         value = " " + std::to_string(std::stoi(value) * 2) + " ";
     }
     else if(temp.size() == 3) {
-        value = " " + std::to_string(std::stoi(value) * 2);
+        value = std::to_string(std::stoi(value) * 2) + " ";
     }
     else {
         value = std::to_string(std::stoi(value) * 2);

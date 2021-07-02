@@ -1,3 +1,4 @@
+// TODO: MAKE WIN AND LOSE LOGIC
 #include "SpawnTile.h"
 #include "DrawGrid.h"
 #include "Tile.h"
@@ -70,6 +71,7 @@ int main() {
     Tile grid[4][4];
     char key;
     int score = 0;
+    SpawnTile(grid);
     while(true) {
         // if(isFull(grid)) {
         //     std::cout << "GAME OVER!" << std::endl;
@@ -97,21 +99,32 @@ int main() {
         //             }
         //         }
         //     }
-        SpawnTile(grid);
         DrawGrid(grid, score);
         system("stty raw");
         key = getchar();
         system("stty cooked");
         system("clear");
         if(key == 'w' || key == 'a' || key == 's' || key == 'd') {
-            Move(grid, key, score);
+            if(Move(grid, key, score)) {
+                SpawnTile(grid);
+            }
+            else {
+            }
         }
         else if(key == 'q') {
             char choise;
             std::cout << "Are you really want to exit? y/n ";
             std::cin >> choise;
             exit(0);
-            // switch(tolowerc
+            switch(char(tolower(choise))) {
+                case 'y': {
+                    exit(0);
+                    break;
+                }
+                case 'n': {
+                    continue;
+                }
+            }
         }
     }
     // }
