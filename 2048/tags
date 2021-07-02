@@ -4,11 +4,19 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC=g++$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-c -Wall$/;"	m
 Clear	Tile.cpp	/^void Tile::Clear() {$/;"	f	class:Tile
 DRAWGRID_H	DrawGrid.h	2;"	d
 DrawGrid	DrawGrid.cpp	/^void DrawGrid(Tile grid[4][4]) {$/;"	f
+EXECUTABLE	Makefile	/^EXECUTABLE=Main$/;"	m
 Enlarge	Tile.cpp	/^void Tile::Enlarge() {$/;"	f	class:Tile
 GetValue	Tile.cpp	/^std::string Tile::GetValue() {$/;"	f	class:Tile
+LDFLAGS	Makefile	/^LDFLAGS=$/;"	m
+MOVE_H	Move.h	2;"	d
+Move	Move.cpp	/^void Move(Tile grid[4][4], char key) {$/;"	f
+OBJECTS	Makefile	/^OBJECTS=$(SOURCES:.cpp=.o)$/;"	m
+SOURCES	Makefile	/^SOURCES=Main.cpp DrawGrid.cpp Tile.cpp SpawnTile.cpp Move.cpp$/;"	m
 SPAWNTILE_H	SpawnTile.h	2;"	d
 SetValue	Tile.cpp	/^void Tile::SetValue(std::string value) {$/;"	f	class:Tile
 SpawnTile	SpawnTile.cpp	/^void SpawnTile(Tile grid[4][4]) {$/;"	f

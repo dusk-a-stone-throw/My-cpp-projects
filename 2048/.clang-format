@@ -73,7 +73,6 @@ BraceWrapping:
     # Before
     BeforeCatch: true
     BeforeElse: true
-    
     # Split
     SplitEmptyFunction: true
     SplitEmptyRecord: true

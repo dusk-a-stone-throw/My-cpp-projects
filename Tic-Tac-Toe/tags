@@ -1,0 +1,22 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DRAWBOARD_H	drawBoard.h	2;"	d
+FIGURE_H	figure.h	3;"	d
+Figure	figure.cpp	/^Figure::Figure() {$/;"	f	class:Figure
+Figure	figure.cpp	/^Figure::Figure(char type) {$/;"	f	class:Figure
+Figure	figure.h	/^class Figure {$/;"	c
+GetType	figure.h	/^    char GetType() {$/;"	f	class:Figure
+ISWIN_H	isWin.h	2;"	d
+MOVE_H	move.h	2;"	d
+SetType	figure.cpp	/^void Figure::SetType(char type) {$/;"	f	class:Figure
+changeTurn	main.cpp	/^char changeTurn(char turn) {$/;"	f
+drawBoard	drawBoard.cpp	/^void drawBoard(Figure board[3][3]) {$/;"	f
+isFull	main.cpp	/^bool isFull(Figure board[3][3]) {$/;"	f
+isWin	isWin.cpp	/^bool isWin(Figure board[3][3]) {$/;"	f
+main	main.cpp	/^int main() {$/;"	f
+move	move.cpp	/^void move(Figure board[3][3], int &x, int &y, char key, char &turn) {$/;"	f
+type	figure.h	/^    char type;$/;"	m	class:Figure

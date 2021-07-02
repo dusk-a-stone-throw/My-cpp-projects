@@ -1,0 +1,269 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Airplane	Simple_programs/class.cpp	/^    Airplane()$/;"	f	class:Airplane
+Airplane	Simple_programs/class.cpp	/^class Airplane$/;"	c	file:
+Apple	Simple_programs/class.cpp	/^    Apple(int weight, string color)$/;"	f	class:Apple
+Apple	Simple_programs/class.cpp	/^class Apple$/;"	c	file:
+Bazooka	Simple_programs/class.cpp	/^class Bazooka : public Weapon$/;"	c	file:
+BracketMsg	Simple_programs/class.cpp	/^    BracketMsg(string msg) : Msg(msg)$/;"	f	class:BracketMsg
+BracketMsg	Simple_programs/class.cpp	/^class BracketMsg : public Msg$/;"	c	file:
+Brain	Simple_programs/class.cpp	/^    class Brain$/;"	c	class:Man	file:
+Bycicle	Simple_programs/class.cpp	/^class Bycicle : public IBicycle$/;"	c	file:
+CALCULATOR_H	GuiCalculator/calc.h	2;"	d
+CXX	Elements/Makefile	/^CXX = g++$/;"	m
+CXXFLAGS	Elements/Makefile	/^CXXFLAGS	:= -std=c++17 -Wall -Wextra -g$/;"	m
+Calc	GuiCalculator/calc.cpp	/^Calc::Calc(QWidget *parent) : QWidget(parent) {$/;"	f	class:Calc
+Calc	GuiCalculator/calc.h	/^class Calc : public QWidget {$/;"	c
+Cap	Simple_programs/class.cpp	/^class Cap$/;"	c	file:
+Car	Simple_programs/class.cpp	/^    Car()$/;"	f	class:Car
+Car	Simple_programs/class.cpp	/^class Car$/;"	c	file:
+ChangeColor	Simple_programs/class.cpp	/^    static void ChangeColor(Apple &apple, string color)$/;"	f	class:Apple
+Character	Simple_programs/class.cpp	/^    Character()$/;"	f	class:Character
+Character	Simple_programs/class.cpp	/^class Character$/;"	c	file:
+CheckVoltage	Simple_programs/class.cpp	/^    bool CheckVoltage()$/;"	f	class:CoffeGrinder	file:
+Clear	2048/Tile.cpp	/^void Tile::Clear() {$/;"	f	class:Tile
+CoffeGrinder	Simple_programs/class.cpp	/^class CoffeGrinder$/;"	c	file:
+Component	Simple_programs/class.cpp	/^    Component(string companyName)$/;"	f	class:Component
+Component	Simple_programs/class.cpp	/^class Component$/;"	c	file:
+Copy	Mines/mines.cpp	/^void Copy(vector <int> field, vector <string>& opendField) {$/;"	f
+DRAWBOARD_H	Tic-Tac-Toe/drawBoard.h	2;"	d
+DRAWGRID_H	2048/DrawGrid.h	2;"	d
+Discriminant	Simple_programs/quadratic.cpp	/^int Discriminant(int a, int b, int c) {$/;"	f
+DrawGrid	2048/DrawGrid.cpp	/^void DrawGrid(Tile grid[4][4]) {$/;"	f
+Drive	Simple_programs/class.cpp	/^    void Drive()$/;"	f	class:Car
+Element	Elements/src/mainClass.h	/^    Element(int number) {$/;"	f	class:Element
+Element	Elements/src/mainClass.h	/^    Element(int number, std::string name, std::string symbol, std::string latinName, double mass) {$/;"	f	class:Element
+Element	Elements/src/mainClass.h	/^class Element {$/;"	c
+Enlarge	2048/Tile.cpp	/^void Tile::Enlarge() {$/;"	f	class:Tile
+FIGURE_H	Tic-Tac-Toe/figure.h	3;"	d
+FIXPATH	Elements/Makefile	/^FIXPATH = $(subst \/,\\,$1)$/;"	m
+FIXPATH	Elements/Makefile	/^FIXPATH = $1$/;"	m
+Fact	Simple_programs/factorial.cpp	/^int Fact(int x) {$/;"	f
+Figure	Tic-Tac-Toe/figure.cpp	/^Figure::Figure() {$/;"	f	class:Figure
+Figure	Tic-Tac-Toe/figure.cpp	/^Figure::Figure(char type) {$/;"	f	class:Figure
+Figure	Tic-Tac-Toe/figure.h	/^class Figure {$/;"	c
+Fly	Simple_programs/class.cpp	/^    void Fly()$/;"	f	class:Airplane
+FlyingCar	Simple_programs/class.cpp	/^    FlyingCar()$/;"	f	class:FlyingCar
+FlyingCar	Simple_programs/class.cpp	/^class FlyingCar : public Car, public Airplane$/;"	c	file:
+Foo	Simple_programs/stack.cpp	/^int Foo(int a) {$/;"	f
+Foo	Simple_programs/throw.cpp	/^void Foo(int value) {$/;"	f
+GPU	Simple_programs/class.cpp	/^    GPU(string companyName) : Component(companyName)$/;"	f	class:GPU
+GPU	Simple_programs/class.cpp	/^class GPU : public Component$/;"	c	file:
+Gen	Simple_programs/seed.cpp	/^void Gen(string words[]) {$/;"	f
+Generate	Mines/mines.cpp	/^void Generate(vector <int>& field, int bombs) {$/;"	f
+GetColor	Simple_programs/class.cpp	/^    string GetColor()$/;"	f	class:Cap
+GetCount	Simple_programs/class.cpp	/^    static int GetCount()$/;"	f	class:Apple
+GetInfo	Simple_programs/class.cpp	/^        string GetInfo()$/;"	f	class:Image::Pixel
+GetInfo	Simple_programs/class.cpp	/^    void GetInfo()$/;"	f	class:Human
+GetInfo	Simple_programs/class.cpp	/^    void GetInfo()$/;"	f	class:Image
+GetLatin	Elements/src/mainClass.h	/^    std::string GetLatin() {$/;"	f	class:Element
+GetMass	Elements/src/mainClass.h	/^    double GetMass() {$/;"	f	class:Element
+GetMsg	Simple_programs/class.cpp	/^    virtual string GetMsg()$/;"	f	class:Msg
+GetName	Elements/src/mainClass.h	/^    std::string GetName() {$/;"	f	class:Element
+GetSymbol	Elements/src/mainClass.h	/^    std::string GetSymbol() {$/;"	f	class:Element
+GetType	Tic-Tac-Toe/figure.h	/^    char GetType() {$/;"	f	class:Figure
+GetValue	2048/Tile.cpp	/^std::string Tile::GetValue() {$/;"	f	class:Tile
+GetX	Simple_programs/class.cpp	/^    int GetX()$/;"	f	class:Point
+GetY	Simple_programs/class.cpp	/^    int GetY()$/;"	f	class:Point
+GraphicCard	Simple_programs/class.cpp	/^    GraphicCard(string GPUcompanyName, string RAMcompanyName)$/;"	f	class:GraphicCard
+GraphicCard	Simple_programs/class.cpp	/^class GraphicCard : public GPU, public RAM$/;"	c	file:
+Gun	Simple_programs/class.cpp	/^class Gun : public Weapon$/;"	c	file:
+HP	Simple_programs/class.cpp	/^    int HP;$/;"	m	class:Character	file:
+Human	Simple_programs/class.cpp	/^    Human(string name)$/;"	f	class:Human
+Human	Simple_programs/class.cpp	/^    Human(string name, int age) : Human(name)$/;"	f	class:Human
+Human	Simple_programs/class.cpp	/^    Human(string name, int age, string sex) : Human(name, age)$/;"	f	class:Human
+Human	Simple_programs/class.cpp	/^class Human$/;"	c	file:
+IBicycle	Simple_programs/class.cpp	/^class IBicycle$/;"	c	file:
+INCLUDE	Elements/Makefile	/^INCLUDE	:= include$/;"	m
+INCLUDEDIRS	Elements/Makefile	/^INCLUDEDIRS	:= $(INCLUDE)$/;"	m
+INCLUDEDIRS	Elements/Makefile	/^INCLUDEDIRS	:= $(shell find $(INCLUDE) -type d)$/;"	m
+INCLUDES	Elements/Makefile	/^INCLUDES	:= $(patsubst %,-I%, $(INCLUDEDIRS:%\/=%))$/;"	m
+ISWIN_H	Tic-Tac-Toe/isWin.h	2;"	d
+Image	Simple_programs/class.cpp	/^class Image$/;"	c	file:
+Knife	Simple_programs/class.cpp	/^class Knife : public Weapon$/;"	c	file:
+LENGHT	Simple_programs/class.cpp	/^    static const int LENGHT = 5;$/;"	m	class:Image	file:
+LFLAGS	Elements/Makefile	/^LFLAGS =$/;"	m
+LIB	Elements/Makefile	/^LIB		:= lib$/;"	m
+LIBDIRS	Elements/Makefile	/^LIBDIRS		:= $(LIB)$/;"	m
+LIBDIRS	Elements/Makefile	/^LIBDIRS		:= $(shell find $(LIB) -type d)$/;"	m
+LIBS	Elements/Makefile	/^LIBS		:= $(patsubst %,-L%, $(LIBDIRS:%\/=%))$/;"	m
+MAIN	Elements/Makefile	/^MAIN	:= main$/;"	m
+MAIN	Elements/Makefile	/^MAIN	:= main.exe$/;"	m
+MD	Elements/Makefile	/^MD	:= mkdir -p$/;"	m
+MD	Elements/Makefile	/^MD	:= mkdir$/;"	m
+MOVE_H	Tic-Tac-Toe/move.h	2;"	d
+Man	Simple_programs/class.cpp	/^class Man$/;"	c	file:
+Model	Simple_programs/class.cpp	/^class Model$/;"	c	file:
+Msg	Simple_programs/class.cpp	/^    Msg(string msg)$/;"	f	class:Msg
+Msg	Simple_programs/class.cpp	/^class Msg$/;"	c	file:
+MyClass	Simple_programs/class.cpp	/^    MyClass(const MyClass &other)$/;"	f	class:MyClass
+MyClass	Simple_programs/class.cpp	/^    MyClass(int size)$/;"	f	class:MyClass
+MyClass	Simple_programs/class.cpp	/^class MyClass$/;"	c	file:
+OBJECTS	Elements/Makefile	/^OBJECTS		:= $(SOURCES:.cpp=.o)$/;"	m
+OUTPUT	Elements/Makefile	/^OUTPUT	:= output$/;"	m
+OUTPUTMAIN	Elements/Makefile	/^OUTPUTMAIN	:= $(call FIXPATH,$(OUTPUT)\/$(MAIN))$/;"	m
+Orc	Simple_programs/class.cpp	/^    Orc()$/;"	f	class:Orc
+Orc	Simple_programs/class.cpp	/^class Orc : virtual public Character$/;"	c	file:
+OrcWarrior	Simple_programs/class.cpp	/^    OrcWarrior()$/;"	f	class:OrcWarrior
+OrcWarrior	Simple_programs/class.cpp	/^class OrcWarrior : public Orc, public Warrior$/;"	c	file:
+Pixel	Simple_programs/class.cpp	/^        Pixel(int r, int g, int b)$/;"	f	class:Image::Pixel
+Pixel	Simple_programs/class.cpp	/^    class Pixel$/;"	c	class:Image	file:
+Player	Simple_programs/class.cpp	/^class Player$/;"	c	file:
+Point	Simple_programs/class.cpp	/^    Point()$/;"	f	class:Point
+Point	Simple_programs/class.cpp	/^    Point(int valueX, int valueY)$/;"	f	class:Point
+Point	Simple_programs/class.cpp	/^class Point$/;"	c	file:
+Point	Simple_programs/file.cpp	/^    Point() {$/;"	f	class:Point
+Point	Simple_programs/file.cpp	/^    Point(int valueX, int valueY, int valueZ) {$/;"	f	class:Point
+Point	Simple_programs/file.cpp	/^class Point {$/;"	c	file:
+Print	Mines/mines.cpp	/^void Print(vector <T> field) {$/;"	f
+Print	Simple_programs/class.cpp	/^    void Print(Msg *msg)$/;"	f	class:Printer
+Print	Simple_programs/file.cpp	/^    void Print() {$/;"	f	class:Point
+PrintElem	Elements/src/mainClass.h	/^    void PrintElem() {$/;"	f	class:Element
+Printer	Simple_programs/class.cpp	/^class Printer$/;"	c	file:
+PutOn	Simple_programs/class.cpp	/^    void PutOn()$/;"	f	class:Man
+PutOn	Simple_programs/class.cpp	/^    void PutOn()$/;"	f	class:Model
+RAM	Simple_programs/class.cpp	/^    RAM(string companyName) : Component(companyName)$/;"	f	class:RAM
+RAM	Simple_programs/class.cpp	/^class RAM : public Component$/;"	c	file:
+RM	Elements/Makefile	/^RM			:= del \/q \/f$/;"	m
+RM	Elements/Makefile	/^RM = rm -f$/;"	m
+RideOn	Simple_programs/class.cpp	/^    void RideOn(IBicycle &bicycle)$/;"	f	class:Man
+SOURCEDIRS	Elements/Makefile	/^SOURCEDIRS	:= $(SRC)$/;"	m
+SOURCEDIRS	Elements/Makefile	/^SOURCEDIRS	:= $(shell find $(SRC) -type d)$/;"	m
+SOURCES	Elements/Makefile	/^SOURCES		:= $(wildcard $(patsubst %,%\/*.cpp, $(SOURCEDIRS)))$/;"	m
+SPAWNTILE_H	2048/SpawnTile.h	2;"	d
+SRC	Elements/Makefile	/^SRC		:= src$/;"	m
+SetInfo	Simple_programs/class.cpp	/^    void SetInfo(int setAge, string setSex, string setName)$/;"	f	class:Human
+SetType	Tic-Tac-Toe/figure.cpp	/^void Figure::SetType(char type) {$/;"	f	class:Figure
+SetValue	2048/Tile.cpp	/^void Tile::SetValue(std::string value) {$/;"	f	class:Tile
+Shoot	Simple_programs/class.cpp	/^    void Shoot(Weapon *weapon)$/;"	f	class:Player
+Size	Simple_programs/class.cpp	/^    int Size;$/;"	m	class:MyClass	file:
+SpawnTile	2048/SpawnTile.cpp	/^void SpawnTile(Tile grid[4][4]) {$/;"	f
+SportBycicle	Simple_programs/class.cpp	/^class SportBycicle : public IBicycle$/;"	c	file:
+Start	Simple_programs/class.cpp	/^    void Start()$/;"	f	class:CoffeGrinder
+SubmachineGun	Simple_programs/class.cpp	/^class SubmachineGun : public Gun$/;"	c	file:
+Sum	Simple_programs/template.cpp	/^T1 Sum(T1 a, T2 b) {$/;"	f
+Swap	Simple_programs/converter.cpp	/^string Swap(string i) {$/;"	f
+TILE_H	2048/Tile.h	3;"	d
+TakeApple	Simple_programs/class.cpp	/^void Human::TakeApple(Apple &apple)$/;"	f	class:Human
+TestClass	Simple_programs/class.cpp	/^class TestClass$/;"	c	file:
+Think	Simple_programs/class.cpp	/^        void Think()$/;"	f	class:Man::Brain
+Think	Simple_programs/class.cpp	/^    void Think()$/;"	f	class:Man
+Tile	2048/Tile.cpp	/^Tile::Tile() {$/;"	f	class:Tile
+Tile	2048/Tile.h	/^class Tile {$/;"	c
+WORDS_NUM	Simple_programs/seed.cpp	/^const int WORDS_NUM = 2048;$/;"	v
+WORDS_TO_GEN	Simple_programs/seed.cpp	/^const int WORDS_TO_GEN = 12;$/;"	v
+Warrior	Simple_programs/class.cpp	/^    Warrior()$/;"	f	class:Warrior
+Warrior	Simple_programs/class.cpp	/^class Warrior : virtual public Character$/;"	c	file:
+Weapon	Simple_programs/class.cpp	/^class Weapon$/;"	c	file:
+add	Simple_programs/ternar.cpp	/^int add(int x, int y)$/;"	f
+additon	Simple_programs/selection.cpp	/^void additon(int &a) {$/;"	f
+age	Simple_programs/class.cpp	/^    int age;$/;"	m	class:Human	file:
+arr	Simple_programs/class.cpp	/^    int arr[5] = {0, 1, 2, 3, 4};$/;"	m	class:TestClass	file:
+b	Simple_programs/class.cpp	/^        int b;$/;"	m	class:Image::Pixel	file:
+brain	Simple_programs/class.cpp	/^    Brain brain;$/;"	m	class:Man	file:
+bruteForce	Simple_programs/crypt.cpp	/^void bruteForce(string word) { \/\/ Перебираем фразу всеми ключами, от 1 до 25 (0 и 26 не влияют на текст)$/;"	f
+cap	Simple_programs/class.cpp	/^    Cap cap;$/;"	m	class:Man	file:
+cap	Simple_programs/class.cpp	/^    Cap cap;$/;"	m	class:Model	file:
+changeTurn	Tic-Tac-Toe/main.cpp	/^char changeTurn(char turn) {$/;"	f
+clone	Simple_programs/change.cpp	/^void clone(int *arr, int *arr2, int &size) {$/;"	f
+color	Simple_programs/class.cpp	/^    string color = "RED";$/;"	m	class:Cap	file:
+color	Simple_programs/class.cpp	/^    string color;$/;"	m	class:Apple	file:
+companyName	Simple_programs/class.cpp	/^    string companyName;$/;"	m	class:Component	file:
+count	Simple_programs/class.cpp	/^    static int count;$/;"	m	class:Apple	file:
+count	Simple_programs/class.cpp	/^int Apple::count = 0;$/;"	m	class:Apple	file:
+crashgen	Simple_programs/crash.cpp	/^double crashgen () {   $/;"	f
+data	Simple_programs/class.cpp	/^    int *data;$/;"	m	class:MyClass	file:
+data	Simple_programs/concstring.cpp	/^string data() {$/;"	f
+decrypt	Simple_programs/crypt.cpp	/^void decrypt(string word, int key) {$/;"	f
+draw	Simple_programs/crash.cpp	/^void draw(double crash, bool isWin, double crashthink ) {$/;"	f
+drawBoard	Tic-Tac-Toe/drawBoard.cpp	/^void drawBoard(Figure board[3][3]) {$/;"	f
+encrypt	Simple_programs/crypt.cpp	/^void encrypt(string word, int key) { \/\/ Шифрование$/;"	f
+fill	Simple_programs/change.cpp	/^void fill(int *arr, const int size) {$/;"	f
+fillfirst	Simple_programs/const.cpp	/^void fillfirst(int* arr1, const int size) {$/;"	f
+fillsecond	Simple_programs/const.cpp	/^void fillsecond(int* arr2, const int size) {$/;"	f
+foo	Simple_programs/trolling.cpp	/^void foo() {$/;"	f
+g	Simple_programs/class.cpp	/^        int g;$/;"	m	class:Image::Pixel	file:
+hack	Simple_programs/trolling.cpp	/^void hack() {$/;"	f
+id	Simple_programs/class.cpp	/^    int id;$/;"	m	class:Apple	file:
+isFull	Tic-Tac-Toe/main.cpp	/^bool isFull(Figure board[3][3]) {$/;"	f
+isWin	Tic-Tac-Toe/isWin.cpp	/^bool isWin(Figure board[3][3]) {$/;"	f
+latinName	Elements/src/mainClass.h	/^    std::string latinName;$/;"	m	class:Element
+main	2048/Main.cpp	/^int main() {$/;"	f
+main	Elements/src/calc.cpp	/^int main() {$/;"	f
+main	GuiCalculator/main.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	Mines/mines.cpp	/^int main() {$/;"	f
+main	Simple_programs/btcPrice.cpp	/^int main() {$/;"	f
+main	Simple_programs/calculator.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+main	Simple_programs/change.cpp	/^int main() {$/;"	f
+main	Simple_programs/class.cpp	/^int main()$/;"	f
+main	Simple_programs/concstring.cpp	/^int main() {$/;"	f
+main	Simple_programs/const.cpp	/^int main() {$/;"	f
+main	Simple_programs/converter.cpp	/^int main() {$/;"	f
+main	Simple_programs/crash.cpp	/^int main() {$/;"	f
+main	Simple_programs/crypt.cpp	/^int main() {$/;"	f
+main	Simple_programs/dinamic2darr.cpp	/^int main() {$/;"	f
+main	Simple_programs/dinamicarr.cpp	/^int main() {$/;"	f
+main	Simple_programs/dinamicmem.cpp	/^int main() { $/;"	f
+main	Simple_programs/factorial.cpp	/^int main() {$/;"	f
+main	Simple_programs/file.cpp	/^int main() {$/;"	f
+main	Simple_programs/helloVsCode.cpp	/^int main() {$/;"	f
+main	Simple_programs/ifdef.cpp	/^int main() {$/;"	f
+main	Simple_programs/quadratic.cpp	/^int main() {$/;"	f
+main	Simple_programs/seed.cpp	/^int main() {$/;"	f
+main	Simple_programs/selection.cpp	/^int main() {$/;"	f
+main	Simple_programs/stack.cpp	/^int main() {$/;"	f
+main	Simple_programs/string.cpp	/^int main() {$/;"	f
+main	Simple_programs/stringptr.cpp	/^int main() {$/;"	f
+main	Simple_programs/swap.cpp	/^int main() {s$/;"	f
+main	Simple_programs/template.cpp	/^int main() {$/;"	f
+main	Simple_programs/ternar.cpp	/^int main() {$/;"	f
+main	Simple_programs/text.cpp	/^int main() {$/;"	f
+main	Simple_programs/throw.cpp	/^int main() {$/;"	f
+main	Simple_programs/trolling.cpp	/^int main() {$/;"	f
+main	Tic-Tac-Toe/main.cpp	/^int main() {$/;"	f
+main	layoutChanger/layoutChanger.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+mass	Elements/src/mainClass.h	/^    double mass;$/;"	m	class:Element
+move	Tic-Tac-Toe/move.cpp	/^void move(Figure board[3][3], int &x, int &y, char key, char &turn) {$/;"	f
+msg	Simple_programs/class.cpp	/^    string msg;$/;"	m	class:Msg	file:
+multiplication	Simple_programs/selection.cpp	/^void multiplication(int & a) {$/;"	f
+name	Elements/src/mainClass.h	/^    std::string name;$/;"	m	class:Element
+name	Simple_programs/class.cpp	/^    string name;$/;"	m	class:Human	file:
+number	Elements/src/mainClass.h	/^    int number;$/;"	m	class:Element
+operator !=	Simple_programs/class.cpp	/^    bool operator!=(const Point &other)$/;"	f	class:Point
+operator +	Simple_programs/class.cpp	/^    Point operator+(const Point &other)$/;"	f	class:Point
+operator ++	Simple_programs/class.cpp	/^    Point &operator++()$/;"	f	class:Point
+operator ++	Simple_programs/class.cpp	/^    Point &operator++(int value)$/;"	f	class:Point
+operator =	Simple_programs/class.cpp	/^    MyClass &operator=(const MyClass &other)$/;"	f	class:MyClass
+operator ==	Simple_programs/class.cpp	/^    bool operator==(const Point &other)$/;"	f	class:Point
+operator []	Simple_programs/class.cpp	/^    int &operator[](int index)$/;"	f	class:TestClass
+parsing	layoutChanger/parsing.cpp	/^void parsing(char phrase[]) {$/;"	f
+print	Simple_programs/change.cpp	/^void print(int *arr, int size) {$/;"	f
+r	Simple_programs/class.cpp	/^        int r;$/;"	m	class:Image::Pixel	file:
+server	Simple_programs/concstring.cpp	/^string server() {$/;"	f
+sex	Simple_programs/class.cpp	/^    string sex;$/;"	m	class:Human	file:
+show	Simple_programs/concstring.cpp	/^string show(string (*foo)()) {$/;"	f
+size	Simple_programs/stringptr.cpp	/^void size(const char *string) {$/;"	f
+subtract	Simple_programs/ternar.cpp	/^int subtract(int x, int y)$/;"	f
+swap	Simple_programs/swap.cpp	/^void swap(T1 & a, T2 & b) {$/;"	f
+symbol	Elements/src/mainClass.h	/^    std::string symbol;$/;"	m	class:Element
+table	Elements/src/mainClass.h	/^    std::vector<Element> table = {$/;"	v
+type	Tic-Tac-Toe/figure.h	/^    char type;$/;"	m	class:Figure
+value	2048/Tile.h	/^    std::string value;$/;"	m	class:Tile
+weight	Simple_programs/class.cpp	/^    int weight;$/;"	m	class:Apple	file:
+winLose	Simple_programs/crash.cpp	/^bool winLose(double  crash, double crashthink) {$/;"	f
+x	Simple_programs/class.cpp	/^    int x;$/;"	m	class:Point	file:
+x	Simple_programs/file.cpp	/^    int x;$/;"	m	class:Point	file:
+x1	Simple_programs/quadratic.cpp	/^double x1(int d, int b, int a) {$/;"	f
+x2	Simple_programs/quadratic.cpp	/^double x2(int d, int b, int a) {$/;"	f
+y	Simple_programs/class.cpp	/^    int y;$/;"	m	class:Point	file:
+y	Simple_programs/file.cpp	/^    int y;$/;"	m	class:Point	file:
+z	Simple_programs/file.cpp	/^    int z;$/;"	m	class:Point	file:
+~Airplane	Simple_programs/class.cpp	/^    ~Airplane()$/;"	f	class:Airplane
+~Apple	Simple_programs/class.cpp	/^    ~Apple()$/;"	f	class:Apple
+~Car	Simple_programs/class.cpp	/^    ~Car()$/;"	f	class:Car
+~FlyingCar	Simple_programs/class.cpp	/^    ~FlyingCar()$/;"	f	class:FlyingCar
+~MyClass	Simple_programs/class.cpp	/^    ~MyClass()$/;"	f	class:MyClass

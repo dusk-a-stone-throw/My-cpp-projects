@@ -13,7 +13,7 @@ void SpawnTile(Tile grid[4][4]) {
                         continue;
                     }
                     else {
-                        if(rand() % 2 + 0 == 1) {
+                        if(rand() % 100 + 0 == 1) {
                             grid[i][j].SetValue("  2 ");
                             filled = true;
                             break;
