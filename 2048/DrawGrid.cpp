@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-
 #include "Tile.h"
 void DrawGrid(Tile grid[4][4], int score) {
     std::cout << "Score: " << score << std::endl;

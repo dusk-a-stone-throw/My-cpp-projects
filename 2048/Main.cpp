@@ -4,9 +4,7 @@
 #include "DrawGrid.h"
 #include "Tile.h"
 #include "Move.h"
-#include <algorithm>
 #include <cctype>
-#include <cstdint>
 #include <ctime>
 #include <functional>
 #include <iostream>
