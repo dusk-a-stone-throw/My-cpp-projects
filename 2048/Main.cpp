@@ -1,11 +1,14 @@
+
 // TODO: MAKE WIN AND LOSE LOGIC
 #include "SpawnTile.h"
 #include "DrawGrid.h"
 #include "Tile.h"
 #include "Move.h"
+#include <algorithm>
 #include <cctype>
 #include <cstdint>
 #include <ctime>
+#include <functional>
 #include <iostream>
 bool isFull(Tile grid[4][4]) {
     for(int i = 0; i < 4; i++) {
