@@ -1,4 +1,3 @@
-
 // TODO: MAKE WIN AND LOSE LOGIC
 #include "SpawnTile.h"
 #include "DrawGrid.h"

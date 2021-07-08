@@ -36,7 +36,8 @@ AlignEscapedNewlines: Left
 AlignOperands: false
 AlignTrailingComments: true
 AlignAfterOpenBracket: Align
-
+# AlignConsecutiveBitFields: true
+AlignConsecutiveMacros: true
 # Allows 
 AllowShortFunctionsOnASingleLine: None
 AllowAllParametersOfDeclarationOnNextLine: false

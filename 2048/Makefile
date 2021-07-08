@@ -1,12 +1,10 @@
-#all:
-#	g++ Main.cpp DrawGrid.cpp Tile.cpp SpawnTile.cpp -o Main
+.PHONY: all clean run
 CC=g++
 CFLAGS=-c -Wall
 LDFLAGS=
 SOURCES=Main.cpp DrawGrid.cpp Tile.cpp SpawnTile.cpp Move.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=Main
-.PHONY: all clean run
 all: $(SOURCES) $(EXECUTABLE)
 	
 $(EXECUTABLE): $(OBJECTS) 
