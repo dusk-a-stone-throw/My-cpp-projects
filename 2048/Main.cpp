@@ -1,56 +1,60 @@
-// TODO: MAKE WIN AND LOSE LOGIC
+// TODO: MAKE QUIT FUNCTION
 #include "SpawnTile.h"
 #include "DrawGrid.h"
 #include "Tile.h"
 #include "Move.h"
-#include <cctype>
 #include <ctime>
-#include <functional>
 #include <iostream>
 bool isFull(Tile grid[4][4]) {
     for(int i = 0; i < 4; i++) {
         for(int j = 0; j < 4; j++) {
-            std::cout << "i: " << i << " j: " << j << std::endl;
-            if(i - 1 >= 0) {
-                std::cout << "i - 1 > 0" << std::endl;
-                if(grid[i][j].GetValue() == grid[i - 1][j].GetValue()) {
-                    return false;
-                }
-                else {
-                }
-            }
-            if(i + 1 <= 3) {
-                std::cout << "i + 1 <= 0" << std::endl;
-                if(grid[i][j].GetValue() == grid[i + 1][j].GetValue()) {
-                    return false;
-                }
-                else {
-                }
+            if(grid[i][j].GetValue() == "    ") {
+                return false;
             }
             else {
-            }
-            if(j - 1 >= 0) {
-                std::cout << "j - 1 >= 0" << std::endl;
-                if(grid[i][j].GetValue() == grid[i + 1][j].GetValue()) {
-                    return false;
+                if(i - 1 >= 0) {
+                    // std::cout << "i - 1 >= 0" << std::endl;
+                    if(grid[i][j].GetValue() == grid[i - 1][j].GetValue()) {
+                        return false;
+                    }
+                    else {
+                    }
                 }
                 else {
                 }
-            }
-            if(j + 1 <= 3) {
-                std::cout << "j + 1 <= 0" << std::endl;
-                if(grid[i][j].GetValue() == grid[i + 1][j].GetValue()) {
-                    return false;
+                if(i + 1 <= 3) {
+                    // std::cout << "i + 1 <= 3" << std::endl;
+                    if(grid[i][j].GetValue() == grid[i + 1][j].GetValue()) {
+                        return false;
+                    }
+                    else {
+                    }
                 }
                 else {
                 }
-            }
-            else {
-                std::cout << "else" << std::endl;
+                if(j - 1 >= 0) {
+                    // std::cout << "j - 1 >= 0"<< std::endl;
+                    if(grid[i][j].GetValue() == grid[i][j - 1].GetValue()) {
+                        return false;
+                    }
+                    else {
+                    }
+                }
+                else {
+                }
+                if(j + 1 <= 3) {
+                    // std::cout << "j + 1 <= 3" << std::endl;
+                    if(grid[i][j].GetValue() == grid[i][j + 1].GetValue()) {
+                        return false;
+                    }
+                    else {
+                    }
+                }
                 continue;
             }
         }
     }
+    // }
     return true;
 }
 bool isWin(Tile grid[4][4]) {
@@ -72,15 +76,19 @@ int main() {
     char key;
     int score = 0;
     SpawnTile(grid);
+    grid[0][0].SetValue("1024");
+    grid[0][1].SetValue("1488");
+    grid[0][2].SetValue("1288");
+    grid[0][3].SetValue("1388");
+    grid[1][0].SetValue("1588");
+    grid[1][1].SetValue("1888");
+    grid[1][2].SetValue("1668");
+    grid[1][3].SetValue("1418");
+    grid[2][0].SetValue("1428");
+    grid[2][1].SetValue("1438");
+    grid[2][2].SetValue("1348");
+    grid[2][3].SetValue("1218");
     while(true) {
-        // if(isFull(grid)) {
-        //     std::cout << "GAME OVER!" << std::endl;
-        //     break;
-        // }
-        // else if(isWin(grid)) {
-        //     std::cout << "You win!" << std::endl;
-        //     break;
-        // }
         // else {
         //     bool leaveLoop = false;
         //     for(int i = 0; i < 4; i++) {
@@ -100,6 +108,17 @@ int main() {
         //         }
         //     }
         DrawGrid(grid, score);
+        if(isWin(grid)) {
+            std::cout << "You win! Press any key to exit." << std::endl;
+            std::cin.get();
+            break;
+        }
+        else if(isFull(grid)) {
+            std::cout << "GAME OVER!" << std::endl;
+            break;
+        }
+        else {
+        }
         system("stty raw");
         key = getchar();
         system("stty cooked");

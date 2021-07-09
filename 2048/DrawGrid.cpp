@@ -11,27 +11,78 @@ void DrawGrid(Tile grid[4][4], int score) {
                 std::cout << "|" << grid[i][j].GetValue() << "|";
             }
             else {
-                std::string temp = std::to_string(std::stoi(grid[i][j].GetValue())); // remove spaces
-                if(temp.size() == 1) { // Green bold
-                    std::cout << "|"
-                              << "\033[1;37;42m" << grid[i][j].GetValue() << "\033[0m"
-                              << "|";
+                // std::string temp = std::to_string(std::stoi(grid[i][j].GetValue())); // remove spaces
+                int temp = std::stoi(grid[i][j].GetValue());
+                std::cout << "|";
+                switch(temp) {
+                    case 2: {
+                        std::cout << "\033[01;38;05;232;48;05;192m"; // Very pale yellow bg
+                        break;
+                    }
+                    case 4: {
+                        std::cout << "\033[01;38;05;232;48;05;185m"; // Pale yellow bg
+                        break;
+                    }
+                    case 8: {
+                        std::cout << "\033[01;38;05;232;48;05;190m"; // Bright yellow bg
+                        break;
+                    }
+                    case 16: {
+                        std::cout << "\033[01;38;05;232;48;05;150m"; // Very pale green bg
+                        break;
+                    }
+                    case 32: {
+                        std::cout << "\033[01;38;05;232;48;05;113m"; // Pale green bg
+                        break;
+                    }
+                    case 64: {
+                        std::cout << "\033[01;38;05;232;48;05;82m"; // Bright green bg
+                        break;
+                    }
+                    case 128: {
+                        std::cout << "\033[01;38;05;232;48;05;117m"; // Very pale cyan bg
+                        break;
+                    }
+                    case 256: {
+                        std::cout << "\033[01;38;05;232;48;05;74m"; // Pale cyan bg
+                        break;
+                    }
+                    case 512: {
+                        std::cout << "\033[01;38;05;232;48;05;39m"; // Bright cyan bg
+                        break;
+                    }
+                    case 1024: {
+                        std::cout << "\033[01;38;05;232;48;05;160m"; // Pale red bg
+                        break;
+                    }
+                    case 2048: {
+                        std::cout << "\033[01;38;05;232;48;05;196m"; // Bright red bg
+                        break;
+                    }
                 }
-                else if(temp.size() == 2) { // Yellow bold
-                    std::cout << "|"
-                              << "\033[1;37;43m" << grid[i][j].GetValue() << "\033[0m"
-                              << "|";
-                }
-                else if(temp.size() == 3) { // Blue bold
-                    std::cout << "|"
-                              << "\033[1;37;44m" << grid[i][j].GetValue() << "\033[0m"
-                              << "|";
-                }
-                else if(temp.size() == 4) { // Red bold
-                    std::cout << "|"
-                              << "\033[1;37;41m" << grid[i][j].GetValue() << "\033[0m"
-                              << "|";
-                }
+                std::cout << grid[i][j].GetValue() << "\033[0m"
+                          << "|";
+                // std::cout << temp2 << std::endl;
+                // if(temp.size() == 1) { // Green bg bold text
+                //     std::cout << "|"
+                //               << "\033[1;30;42m" << grid[i][j].GetValue() << "\033[0m"
+                //               << "|";
+                // }
+                // else if(temp.size() == 2) { // Yellow bg bold text
+                //     std::cout << "|"
+                //               << "\033[1;30;43m" << grid[i][j].GetValue() << "\033[0m"
+                //               << "|";
+                // }
+                // else if(temp.size() == 3) { // Blue bg bold text
+                //     std::cout << "|"
+                //               << "\033[1;30;44m" << grid[i][j].GetValue() << "\033[0m"
+                //               << "|";
+                // }
+                // else if(temp.size() == 4) { // Red bg bold text
+                //     std::cout << "|"
+                //               << "\033[1;30;41m" << grid[i][j].GetValue() << "\033[0m"
+                //               << "|";
+                // }
             }
         }
         std::cout << "#" << std::endl;
