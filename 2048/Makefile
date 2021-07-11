@@ -1,6 +1,6 @@
 .PHONY: all clean run
-CC=g++
-CFLAGS=-c -Wall
+CC=clang++
+CFLAGS=-c -Wall -std=c++20 
 LDFLAGS=
 SOURCES=Main.cpp DrawGrid.cpp Tile.cpp SpawnTile.cpp Move.cpp
 OBJECTS=$(SOURCES:.cpp=.o)

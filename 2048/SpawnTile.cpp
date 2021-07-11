@@ -1,4 +1,6 @@
+#include <cstdlib>
 #include <iostream>
+#include <string>
 #include "Tile.h"
 void SpawnTile(Tile grid[4][4]) {
     bool filled = false;

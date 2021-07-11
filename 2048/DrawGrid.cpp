@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
 #include "Tile.h"
-void DrawGrid(Tile grid[4][4], int score) {
-    std::cout << "Score: " << score << std::endl;
+void DrawGrid(Tile grid[4][4], int score, int record) {
+    std::cout << "Score: " << score << " Record: " << record << std::endl;
     std::cout << "##########################" << std::endl;
     for(int i = 0; i < 4; i++) {
         std::cout << "#";
@@ -11,7 +11,6 @@ void DrawGrid(Tile grid[4][4], int score) {
                 std::cout << "|" << grid[i][j].GetValue() << "|";
             }
             else {
-                // std::string temp = std::to_string(std::stoi(grid[i][j].GetValue())); // remove spaces
                 int temp = std::stoi(grid[i][j].GetValue());
                 std::cout << "|";
                 switch(temp) {
@@ -62,27 +61,6 @@ void DrawGrid(Tile grid[4][4], int score) {
                 }
                 std::cout << grid[i][j].GetValue() << "\033[0m"
                           << "|";
-                // std::cout << temp2 << std::endl;
-                // if(temp.size() == 1) { // Green bg bold text
-                //     std::cout << "|"
-                //               << "\033[1;30;42m" << grid[i][j].GetValue() << "\033[0m"
-                //               << "|";
-                // }
-                // else if(temp.size() == 2) { // Yellow bg bold text
-                //     std::cout << "|"
-                //               << "\033[1;30;43m" << grid[i][j].GetValue() << "\033[0m"
-                //               << "|";
-                // }
-                // else if(temp.size() == 3) { // Blue bg bold text
-                //     std::cout << "|"
-                //               << "\033[1;30;44m" << grid[i][j].GetValue() << "\033[0m"
-                //               << "|";
-                // }
-                // else if(temp.size() == 4) { // Red bg bold text
-                //     std::cout << "|"
-                //               << "\033[1;30;41m" << grid[i][j].GetValue() << "\033[0m"
-                //               << "|";
-                // }
             }
         }
         std::cout << "#" << std::endl;

@@ -95,7 +95,7 @@ BraceWrapping:
 
 
 # Letter C ===========================================
-ColumnLimit: 80
+ColumnLimit: 100
 CompactNamespaces: false
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
 ConstructorInitializerIndentWidth: 4
