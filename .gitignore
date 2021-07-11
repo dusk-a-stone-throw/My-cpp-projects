@@ -1,3 +1,6 @@
-*.o
-.*.*.swp
-.*.*.un~
+*
+!*.c
+!*.cpp
+!*.h
+!*.hpp
+!Makefile
