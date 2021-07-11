@@ -1,6 +1,6 @@
-*
-!*.c
-!*.cpp
-!*.h
-!*.hpp
-!Makefile
+*.o
+.*.*.swp
+.*.*.un~
+.*.un~
+2048/.record.txt
+2048/Main
