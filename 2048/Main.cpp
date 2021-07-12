@@ -3,13 +3,11 @@
 #include "DrawGrid.h"
 #include "Tile.h"
 #include "Move.h"
-#include <cstdlib>
 #include <ctime>
 #include <exception>
 #include <iostream>
 #include <fstream>
 #include <ostream>
-#include <stdexcept>
 #include <string>
 #include <filesystem>
 bool IsFull(Tile grid[4][4]) {
@@ -140,8 +138,8 @@ int main() {
                 }
             }
             if(IsFull(grid)) {
-                std::cout << "\033[1;31mGAME OVER!\033[0m You have scored: " << score // Bold red text
-                          << ". Enter 'c' to play again or enter something else to EXIT: ";
+                std::cout << "\033[1;31mGAME OVER!\033[0m Enter 'c' to play again or enter "
+                             "something else to EXIT: ";
                 char choise;
                 std::cin >> choise;
                 if(char(tolower(choise) == 'c')) {
@@ -162,7 +160,7 @@ int main() {
                 }
             }
             else if(key == 'q') {
-                // system("clear");
+                system("clear");
                 std::cout << "Are you really want to exit? y/n ";
                 switch(char(tolower(std::cin.get()))) {
                     case 'y': {
