@@ -1,4 +1,4 @@
-.PHONY: all clean run
+.PHONY: all clean run install uninstall
 CC=clang++
 CFLAGS=-c -Wall -std=c++20 
 LDFLAGS=
@@ -16,4 +16,8 @@ clean:
 	rm -rf *.o
 run: $(EXECUTABLE)
 	./$(EXECUTABLE)
-	
+install:
+	install $(EXECUTABLE) $(PREFIX)
+uninstall:
+	rm -rf $(PREFIX)/$(EXECUTABLE)
+
