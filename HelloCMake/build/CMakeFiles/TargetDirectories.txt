@@ -1,0 +1,3 @@
+/home/mikhail/Prog/Cpp/HelloCMake/build/CMakeFiles/rebuild_cache.dir
+/home/mikhail/Prog/Cpp/HelloCMake/build/CMakeFiles/edit_cache.dir
+/home/mikhail/Prog/Cpp/HelloCMake/build/CMakeFiles/test.dir
