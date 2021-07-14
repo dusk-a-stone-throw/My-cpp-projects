@@ -1,9 +1,11 @@
+# CLANG-FORMAT VERSION: 10.0
 # NOT INCLUDED OPTIONS:
 # CommentPragmas (string)
 # DisableFormat (bool)
 # ForEachMacros (std::vector<std::string>)
 # IncludeCategories (std::vector<IncludeCategory>)
 # IncludeIsMainRegex (std::string)
+# IncludeIsMainSourceRegex (std::string)
 # Language (LanguageKind)
 # MacroBlockBegin (std::string)
 # MacroBlockEnd (std::string)
@@ -13,16 +15,20 @@
 # PenaltyBreakString (unsigned)
 # PenaltyExcessCharacter (unsigned)
 # RawStringFormats (std::vector<RawStringFormat>)
+# JavaImportGroups (std::vector<std::string>)
+# NamespaceMacros (std::vector<std::string>)
+# StatementMacros (std::vector<std::string>)
+# TypenameMacros (std::vector<std::string>)
+# UseCRLF (bool)
 # ====================================================
-
-
 # Letter A ===========================================
-
+AccessModifierOffset: -4
 # Always
 AlwaysBreakBeforeMultilineStrings: false
 AlwaysBreakAfterDefinitionReturnType: None
 AlwaysBreakAfterReturnType: None
-AlwaysBreakTemplateDeclarations: true
+AlwaysBreakTemplateDeclarations: No
+
 
 # Alings
 AlignConsecutiveAssignments: true
@@ -30,13 +36,19 @@ AlignEscapedNewlines: Left
 AlignOperands: false
 AlignTrailingComments: true
 AlignAfterOpenBracket: Align
-
+# AlignConsecutiveBitFields: true
+AlignConsecutiveMacros: true
 # Allows 
-AllowShortFunctionsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
 AllowAllParametersOfDeclarationOnNextLine: false
 AllowShortBlocksOnASingleLine: false
 AllowShortCaseLabelsOnASingleLine: false
 AllowShortLoopsOnASingleLine: false
+AllowAllArgumentsOnNextLine: true
+AllowAllConstructorInitializersOnNextLine: true
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: None
+
 # ====================================================
 
 
@@ -44,6 +56,7 @@ AllowShortLoopsOnASingleLine: false
 
 # Breaks
 BreakConstructorInitializers: AfterColon
+BreakInheritanceList: AfterColon
 BreakStringLiterals: true
 BreakAfterJavaFieldAnnotations: true
 BreakBeforeBinaryOperators: None
@@ -51,7 +64,7 @@ BreakBeforeInheritanceComma: false
 BreakBeforeTernaryOperators: false
 
 # BinPack
-BinPackArguments: true
+BinPackArguments: false
 BinPackParameters: false
 
 #Brace Wrapping
@@ -60,8 +73,9 @@ BraceWrapping:
     IndentBraces: false
     
     # After
-    AfterClass: true
-    AfterControlStatement: false
+    AfterCaseLabel: false
+    AfterClass: false
+    AfterControlStatement: Never
     AfterEnum: false
     AfterFunction: false
     AfterNamespace: false
@@ -73,7 +87,6 @@ BraceWrapping:
     # Before
     BeforeCatch: true
     BeforeElse: true
-    
     # Split
     SplitEmptyFunction: true
     SplitEmptyRecord: true
@@ -82,7 +95,7 @@ BraceWrapping:
 
 
 # Letter C ===========================================
-ColumnLimit: 80
+ColumnLimit: 100
 CompactNamespaces: false
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
 ConstructorInitializerIndentWidth: 4
@@ -92,7 +105,9 @@ Cpp11BracedListStyle: true
 
 
 # Letter D ===========================================
+DeriveLineEnding: true
 DerivePointerAlignment: false
+
 # ====================================================
 
 
@@ -110,6 +125,7 @@ FixNamespaceComments: false
 IncludeBlocks: Regroup
 # Indents
 IndentCaseLabels: true
+IndentGotoLabels: true
 IndentPPDirectives: None
 IndentWidth: 4
 IndentWrappedFunctionNames: false
@@ -137,6 +153,7 @@ NamespaceIndentation: All
 
 
 # Letter O ===========================================
+ObjCBinPackProtocolList: Auto
 ObjCBlockIndentWidth: 4
 ObjCSpaceAfterProperty: false
 ObjCSpaceBeforeProtocolList: false
@@ -160,9 +177,17 @@ ReflowComments: true
 SortIncludes: false
 SortUsingDeclarations: false
 SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
 SpaceAfterTemplateKeyword: false
 SpaceBeforeAssignmentOperators: true
 SpaceBeforeParens: Never
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyBlock: false
+SpacesInConditionalStatement: false
 SpaceInEmptyParentheses: false
 SpacesBeforeTrailingComments: 1
 SpacesInAngles: false
