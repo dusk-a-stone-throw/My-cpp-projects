@@ -13,8 +13,7 @@ bool Move(Tile grid[4][4], char key, int &score) {
                     do {
                         if(i - distanceToCheck >= 0 &&
                            (grid[i - distanceToCheck][j].GetValue() == "    " ||
-                            grid[i - distanceToCheck][j].GetValue() ==
-                                grid[i][j].GetValue()) &&
+                            grid[i - distanceToCheck][j].GetValue() == grid[i][j].GetValue()) &&
                            grid[i][j].GetValue() != "    ") {
                             freeCells++;
                             distanceToCheck++;
@@ -34,8 +33,6 @@ bool Move(Tile grid[4][4], char key, int &score) {
                         }
                         grid[i][j].Clear();
                     }
-                    else {
-                    }
                 }
             }
             break;
@@ -48,8 +45,7 @@ bool Move(Tile grid[4][4], char key, int &score) {
                     do {
                         if(i + distanceToCheck <= 3 &&
                            (grid[i + distanceToCheck][j].GetValue() == "    " ||
-                            grid[i + distanceToCheck][j].GetValue() ==
-                                grid[i][j].GetValue()) &&
+                            grid[i + distanceToCheck][j].GetValue() == grid[i][j].GetValue()) &&
                            grid[i][j].GetValue() != "    ") {
                             freeCells++;
                             distanceToCheck++;
@@ -69,8 +65,6 @@ bool Move(Tile grid[4][4], char key, int &score) {
                         }
                         grid[i][j].Clear();
                     }
-                    else {
-                    }
                 }
             }
             break;
@@ -83,8 +77,7 @@ bool Move(Tile grid[4][4], char key, int &score) {
                     do {
                         if(j - distanceToCheck >= 0 &&
                            (grid[i][j - distanceToCheck].GetValue() == "    " ||
-                            grid[i][j - distanceToCheck].GetValue() ==
-                                grid[i][j].GetValue()) &&
+                            grid[i][j - distanceToCheck].GetValue() == grid[i][j].GetValue()) &&
                            grid[i][j].GetValue() != "    ") {
                             freeCells++;
                             distanceToCheck++;
@@ -104,8 +97,6 @@ bool Move(Tile grid[4][4], char key, int &score) {
                         }
                         grid[i][j].Clear();
                     }
-                    else {
-                    }
                 }
             }
             break;
@@ -118,8 +109,7 @@ bool Move(Tile grid[4][4], char key, int &score) {
                     do {
                         if(j + distanceToCheck <= 3 &&
                            (grid[i][j + distanceToCheck].GetValue() == "    " ||
-                            grid[i][j + distanceToCheck].GetValue() ==
-                                grid[i][j].GetValue()) &&
+                            grid[i][j + distanceToCheck].GetValue() == grid[i][j].GetValue()) &&
                            grid[i][j].GetValue() != "    ") {
                             freeCells++;
                             distanceToCheck++;
@@ -138,8 +128,6 @@ bool Move(Tile grid[4][4], char key, int &score) {
                             grid[i][j + freeCells].SetValue(grid[i][j].GetValue());
                         }
                         grid[i][j].Clear();
-                    }
-                    else {
                     }
                 }
             }
