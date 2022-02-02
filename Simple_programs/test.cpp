@@ -2,7 +2,7 @@
 #include <iostream>
 #include <ctime>
 using namespace std;
-#define REQUIRED_NUMBER 19451945122
+#define REQUIRED_NUMBER 19451945
 // 19451945122 = 105261^2 + 91499^2
 int main() {
     clock_t start = clock();
