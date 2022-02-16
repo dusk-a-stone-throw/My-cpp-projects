@@ -3,7 +3,6 @@
 int Discriminant(int a, int b, int c) {
     int d = (b * b) - (4 * a * c);
     return d;
-    
 }
 double x1(int d, int b, int a) {
     return (-b + sqrt(d)) / (2 * a);
@@ -21,7 +20,7 @@ int main() {
     std::cout << "C: ";
     std::cin >> c;
     if(Discriminant(a, b, c) < 0) {
-        std::cout << "Корней нет." << std::endl;
+        std::cout << "No roots." << std::endl;
         return 0;
     }
     std::cout << x1(Discriminant(a, b, c), b, a) << std::endl;

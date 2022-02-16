@@ -101,7 +101,7 @@ int GetRecord() {
     }
     catch(const std::invalid_argument &ex) {
         std::cout << "\033[1;31m Record file is invalid. \033[0m" << std::endl;
-        SaveScore(0); // Delete a fucking hacker's record. HAHAHA
+        SaveScore(0); // Delete fucking hacker's record. HAHAHA
     }
     fin.close();
     return temp;

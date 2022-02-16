@@ -1,6 +1,7 @@
 #include <cstdint>
 #include <iostream>
 #include <ctime>
+#include <type_traits>
 using namespace std;
 // FOR EXAMPLE AND TESTS: 19451945122 = 105261^2 + 91499^2
 int main() {
