@@ -7,7 +7,7 @@ using std::cin;
 using std::cout;
 using std::endl;
 using std::vector;
-void getSupposedRoots(long long degree, vector<long long> coefficients, vector<double> &supposedRoots) {
+void getSupposedRoots(long long degree, vector<long long> coefficients, vector<long double> &supposedRoots) {
     vector<long long> termFactors {};
     vector<long long> highestDegreeFactors {};
     for(long long i = 1; i <= llabs(coefficients[degree]); i++) {
@@ -30,12 +30,14 @@ void getSupposedRoots(long long degree, vector<long long> coefficients, vector<d
     // Remove duplicate roots(I don't how to do it differently)
     supposedRoots.erase(std::unique(supposedRoots.begin(), supposedRoots.end()), supposedRoots.end());
 }
-vector<double> checkRoots(vector<long long> coefficients, long long degree, vector<double> supposedRoots) {
+vector<double> checkRoots(vector<long long> coefficients, long long degree, vector<long double> supposedRoots) {
     vector<double> roots {};
     for(long long i = 0; i < supposedRoots.size(); i++) {
-        float tempResult = 0;
+        long double tempResult = 0;
         for(long long j = degree, k = 0; j >= 0 && k <= degree; j--, k++) {
             tempResult += coefficients[k] * pow(supposedRoots[i], j);
+            if(supposedRoots[i] == 14) {
+            }
         }
         if(tempResult == 0) {
             roots.push_back(supposedRoots[i]);
@@ -44,12 +46,11 @@ vector<double> checkRoots(vector<long long> coefficients, long long degree, vect
     return roots;
 }
 int main() {
-    long long degree;
+    long long degree = 9;
     cout << "Enter the highest degree of your equation: ";
     cin >> degree;
-    // long long *coefficients = new long long[degree];
     vector<long long> coefficients {};
-    // long long j = 0;
+    long long j = 0;
     for(long long i = degree; i > 0; i--) {
         long long coefficient;
         cout << "Enter the coefficient before "
@@ -62,7 +63,7 @@ int main() {
     cout << "Enter the free term: ";
     cin >> freeTerm;
     coefficients.push_back(freeTerm);
-    vector<double> supposedRoots {};
+    vector<long double> supposedRoots {};
     getSupposedRoots(degree, coefficients, supposedRoots);
     vector<double> roots = checkRoots(coefficients, degree, supposedRoots);
     if(roots.size() > 0) {
