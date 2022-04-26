@@ -26,7 +26,6 @@ public:
 };
 int main() {
     setlocale(LC_ALL, "ru");
-    SetConsoleOutputCP(1251);
     string path = "$HOME/Desktop/myFile.txt";
     // std::ofstream fout;
     // fout.open(path, ios::app);
