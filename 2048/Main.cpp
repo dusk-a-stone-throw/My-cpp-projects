@@ -161,7 +161,7 @@ int main() {
             }
             else if(key == 'q') {
                 system("clear");
-                std::cout << "Are you really want to exit? y/n ";
+                std::cout << "Do you really want to exit? y/n ";
                 switch(char(tolower(std::cin.get()))) {
                     case 'y': {
                         exit(0);
