@@ -3,7 +3,7 @@
 #include <cmath>
 #include <string>
 using std::cout;
-using std::endl; 
+using std::endl;
 int main(int argc, char *argv[]) {
     if(argc < 4) {
         cout << "Too few arguments." << endl;
@@ -13,11 +13,11 @@ int main(int argc, char *argv[]) {
     }
     else {
         std::string str = argv[1];
-        double a = std::stoi(str);
-        str = argv[3];
-        double b = std::stoi(str);
-        char action = (argv[2])[0];
-        switch (action) {
+        double a        = std::stod(str);
+        str             = argv[3];
+        double b        = std::stod(str);
+        char action     = (argv[2])[0];
+        switch(action) {
             case '+': {
                 cout << a + b << endl;
                 break;
@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
                 break;
             }
             case '/': {
-                if (b == 0)
+                if(b == 0)
                     cout << "ERROR" << endl;
                 else
                     cout << a / b << endl;
@@ -50,8 +50,8 @@ int main(int argc, char *argv[]) {
                 break;
             }
             default:
-                cout <<"INCORRECT OPERATION" << endl;
-        } 
+                cout << "INCORRECT OPERATION" << endl;
+        }
     }
     return 0;
 }
