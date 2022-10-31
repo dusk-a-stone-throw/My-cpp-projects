@@ -18,7 +18,7 @@ void DrawGrid(Tile grid[4][4], int score, int record) {
                         std::cout << "\033[01;38;05;232;48;05;192m"; // Very pale yellow bg
                         break;
                     }
-t                   case 4: {
+                   case 4: {
                         std::cout << "\033[01;38;05;232;48;05;185m"; // Pale yellow bg
                         break;
                     }
