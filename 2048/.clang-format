@@ -161,7 +161,7 @@ ObjCSpaceBeforeProtocolList: false
 
 
 # Letter P ===========================================
-# maybe there will be a reasons for the bugs
+# maybe this will be a reason for the bugs
 PenaltyExcessCharacter: 1
 PenaltyBreakBeforeFirstCallParameter: 100
 PenaltyReturnTypeOnItsOwnLine: 0
